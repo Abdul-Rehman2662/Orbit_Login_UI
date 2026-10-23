@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern responsive login page concept.">
+  <title>Sign In — Login Concept</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="login-layout">
+    <section class="brand-panel" aria-label="Welcome panel">
+      <a class="brand" href="#" aria-label="Orbit home">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>orbit<span class="brand-period">.</span></span>
+      </a>
+
+      <div class="artwork" aria-hidden="true">
+        <div class="grid-glow"></div>
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-middle"></div>
+        <div class="orbit orbit-inner"></div>
+        <div class="planet"><span></span></div>
+        <div class="spark spark-one">✳</div>
+        <div class="spark spark-two">✦</div>
+        <div class="tiny-star star-one">+</div>
+        <div class="tiny-star star-two">+</div>
+        <div class="art-label art-label-one">YOUR SPACE<br>TO CREATE</div>
+        <div class="art-label art-label-two">IDEAS IN<br>ORBIT <span>↗</span></div>
+      </div>
+
+      <div class="brand-message">
+        <p class="eyebrow"><span></span> A BETTER SPACE TO WORK</p>
+        <h1>Your next big<br>thing starts <em>here.</em></h1>
+        <p class="brand-description">A calmer place for your ideas, projects, and plans to come together.</p>
+      </div>
+      <div class="panel-footer"><span>DESIGNED FOR YOUR NEXT CHAPTER</span><span>© 2026 ORBIT</span></div>
+    </section>
+
+    <section class="form-panel" aria-label="Sign in form">
+      <div class="mobile-brand">
+        <a class="brand" href="#"><span class="brand-mark"><i></i><i></i><i></i></span><span>orbit<span class="brand-period">.</span></span></a>
+        <span class="secure-note">SECURE SIGN IN <span>✳</span></span>
+      </div>
+      <div class="form-wrap">
+        <div class="form-top"><span class="eyebrow">WELCOME BACK</span><span class="secure-note desktop-secure">SECURE SIGN IN <span>✳</span></span></div>
+        <h2>Good to see<br>you <em>again.</em></h2>
+        <p class="form-subtitle">Enter your details to access your account.</p>
+
+        <form id="login-form">
+          <label for="email">Email address</label>
+          <div class="input-wrap">
+            <span class="input-icon" aria-hidden="true">✉</span>
+            <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            <span class="input-check" aria-hidden="true">✓</span>
+          </div>
+
+          <div class="password-heading">
+            <label for="password">Password</label>
+            <a href="#forgot" id="forgot-link">Forgot password?</a>
+          </div>
+          <div class="input-wrap">
+            <span class="input-icon lock-icon" aria-hidden="true">⌑</span>
+            <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required minlength="6">
+            <button class="password-toggle" type="button" id="toggle-password" aria-label="Show password">SHOW</button>
+          </div>
+
+          <label class="remember-row"><input type="checkbox" name="remember"> <span class="custom-check"></span><span>Remember me for 30 days</span></label>
+          <button class="submit-button" type="submit"><span>Sign in to your account</span><span class="submit-arrow">↗</span></button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="separator"><span></span><p>NEW AROUND HERE?</p><span></span></div>
+        <a href="#signup" class="signup-link" id="signup-link">Create an account <span>↗</span></a>
+        <p class="terms">By continuing, you agree to our <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a>.</p>
+      </div>
+      <footer class="form-footer"><span>NEED A HAND? <a href="mailto:hello@example.com">GET IN TOUCH</a></span><span>MADE WITH INTENTION <b>✳</b></span></footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
